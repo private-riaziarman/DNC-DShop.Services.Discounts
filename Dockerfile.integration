@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/sdk AS build-env
+FROM 172.18.4.68:5000/mcr.microsoft.com/dotnet/core/sdk AS build-env
 WORKDIR /app
 
 # Copy everything else and build

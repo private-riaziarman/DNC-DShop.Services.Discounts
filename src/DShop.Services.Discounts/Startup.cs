@@ -70,7 +70,7 @@ namespace DShop.Services.Discounts
             initializer.InitializeAsync();
             app.UseMvc();
             app.UseRabbitMq()
-                .SubscribeCommand<CreateDiscount>(onError: (cmd, ex)
+                .SubscribeCommand<CreateDiscount>(onError: (cmd, ex)                    
                     => new CreateDiscountRejected(cmd.CustomerId, ex.Message, "customer_not_found"))
                 .SubscribeEvent<CustomerCreated>(@namespace: "customers")
                 .SubscribeEvent<OrderCompleted>(@namespace: "orders");

@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 
 namespace DShop.Services.Discounts.Messages.Events
 {
+    
     public class CreateDiscountRejected : IRejectedEvent
     {
         public Guid CustomerId { get; }
