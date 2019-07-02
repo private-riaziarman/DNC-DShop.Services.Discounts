@@ -24,7 +24,7 @@ DShop.Services.Discounts is a microservice designed for the discounts bounded co
 **How to start the application?**
 ----------------
 
-Service can be started locally via `dotnet run` (executed in the `/src/DShop.Services.Discounts` directory) or `./scripts/dotnet-run.sh` shell script, by default it will be available under http://localhost:5000.
+Service can be started locally via `dotnet run` (executed in the `/src/DShop.Services.Discounts` directory) or `./scripts/dotnet-run.sh` shell script, by default it will be available under http://localhost:5555.
 
 You can also run the application using [Docker](https://www.docker.com) `docker run --name discounts-service -p 5555:5555 --network dshop-network devmentors/dshop.services.discounts` (include `-d` to run the container in the background).
 
